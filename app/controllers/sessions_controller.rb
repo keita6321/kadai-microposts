@@ -3,14 +3,6 @@ class SessionsController < ApplicationController
   end
 
   def create
-  end
-
-  def destroy
-  endclass SessionsController < ApplicationController
-  def new
-  end
-
-  def create
     email = params[:session][:email].downcase
     password = params[:session][:password]
     if login(email, password)
@@ -41,5 +33,4 @@ class SessionsController < ApplicationController
       return false
     end
   end
-end
 end
